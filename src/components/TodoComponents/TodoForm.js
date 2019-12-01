@@ -30,12 +30,16 @@ export default class TodoForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <input
+          className="input"
+          required
           name="text"
           value={this.state.text}
           onChange={this.handleChange}
           placeholder="todo..."
         />
-        <button onClick={this.handleSubmit}>Add Todos</button>
+        <button className="addTodos" onClick={this.handleSubmit}>
+          Add Todos
+        </button>
       </form>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import TodoList from "./components/TodoComponents/TodoList";
+import "./App.css";
 
 class App extends Component {
   // you will need a place to store your state in
@@ -31,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2>Welcome to your Todo App!</h2>
+        <h1 className="todo-title">Todo List</h1>
         <TodoList />
       </div>
     );
