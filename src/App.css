@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+  background-color: rgb(237, 173, 245);
+  width: 50%;
+  margin-left: 30%;
+  margin-top: 3%;
+}
+
+.todo-title {
+  color: purple;
+  margin-bottom: 20px;
+  padding: 30px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.input {
+  padding: 15px 25px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  background: #f1f1f1;
+  font-size: 16px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* The typing effect */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.addTodos {
+  width: 100px;
+  height: 45px;
+  background: purple;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.all {
+  width: 100px;
+  height: 45px;
+  background: rgb(94, 128, 0);
+  color: #fff;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.active {
+  width: 100px;
+  height: 45px;
+  background: rgb(94, 128, 0);
+  color: #fff;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.completed {
+  width: 100px;
+  height: 45px;
+  background: rgb(94, 128, 0);
+  color: #fff;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.todoLeft {
+  color: #ec4c4c;
+  font-size: 20px;
+}
+
+.removeButton {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin: 10px 10px;
+}
